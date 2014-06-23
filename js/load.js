@@ -60,10 +60,12 @@ $(document).ready(function(e) {
 			$.getScript('https://apis.google.com/js/plusone.js');
 		}
 		
-	}
+	};
 	
-	loadSocial();
-
+	if ($('.social').length > 0) {
+		loadSocial();
+	};
+	
 	/////////////////////
 	// 
 	/////////////////////
