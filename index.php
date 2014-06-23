@@ -5,15 +5,13 @@
 <!--[if IE 9]> <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 	<head>
-    <!--[if ie]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
     <meta charset="UTF-8">
+    <!--[if ie]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
     <meta name="description" content="A&amp;P">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <meta http-equiv="cleartype" content="on">
-    <title>A&amp;P</title>
-    
+    <title>A&amp;P</title>    
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/touch/apple-touch-icon-144x144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/touch/apple-touch-icon-114x114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/touch/apple-touch-icon-72x72-precomposed.png">
@@ -21,7 +19,7 @@
     <link rel="shortcut icon" sizes="196x196" href="/img/touch/touch-icon-196x196.png">
     <link rel="shortcut icon" href="/img/touch/apple-touch-icon.png">
     <meta name="msapplication-TileImage" content="/img/touch/apple-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#222222">
+    <meta name="msapplication-TileColor" content="#fea501">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -32,8 +30,7 @@
 	<meta property="og:image" content="http://www.thinkap.com/img/share.jpg" >
 	<meta property="og:type" content="website" >
 	<meta property="og:url" content="http://www.thinkap.com/" >
-	<meta property="og:site_name" content="A&amp;P" >  
-
+	<meta property="og:site_name" content="A&amp;P" >
     <link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="css/custom.css?v=1.0">
@@ -41,17 +38,10 @@
     <script src="js/modernizr.custom.55666.js"></script>
     </head>    
     <body>
+    
     <!--[if lt IE 8]><p class=chromeframe>Your browser is very outdated or in compatability mode. To use this site to its full potential please <a href="http://browsehappy.com/">upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a>.</p><![endif]-->
     
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  //ga('create', 'UA-XXXXXXX-X', 'domainname.com');
-	  ga('send', 'pageview');
-	</script>
+	<?php include_once('template_inc/google-analytics.php'); ?>
 
 	<div class="container">
 	      <div class="row">
@@ -67,36 +57,35 @@
 	</div>
 
 	<script>
-        Modernizr.load([
-            {
-               test: Modernizr.boxshadow,
-               yep:'//code.jquery.com/jquery-2.1.0.min.js',
-               nope: '//code.jquery.com/jquery-1.11.0.min.js',
-               callback: function(url, result, key){
-                    if (url === '//code.jquery.com/jquery-1.11.0.min.js') {
-                        if ( !window.jQuery ) {
-                            Modernizr.load('js/jquery-1.11.0.min.js');
-                        };
-                    } else if (url == '//code.jquery.com/jquery-2.1.0.min.js') {
-                        if ( !window.jQuery ) {
-                            Modernizr.load('js/jquery-2.1.0.min.js');
-                        };
-                    };				
-                },
-                complete: function() {
-                    Modernizr.load([
-                        {
-                            test: $('.map').length > 0,
-                            yep: '//maps.google.com/maps/api/js?sensor=false'    
-                        },
-                        'js/bootstrap.min.js',
-                        'ielt9!js/respond.min.js',
-                        'js/plugins.js?v=1.0',
-                        'js/load.js?v=1.0'			
-                    ])
-                }
-            }	
-        ]);
+        Modernizr.load([{
+		   test: Modernizr.boxshadow,
+		   yep:'//code.jquery.com/jquery-2.1.0.min.js',
+		   nope: '//code.jquery.com/jquery-1.11.0.min.js',
+		   callback: function(url, result, key){
+				if (url === '//code.jquery.com/jquery-1.11.0.min.js') {
+					if ( !window.jQuery ) { Modernizr.load('js/jquery-1.11.0.min.js'); };
+				} else if (url === '//code.jquery.com/jquery-2.1.0.min.js') {
+					if ( !window.jQuery ) { Modernizr.load('js/jquery-2.1.0.min.js'); };
+				};				
+			},
+			complete: function() {
+				Modernizr.load([
+					{
+						test: $('.map').length > 0,
+						yep: '//maps.google.com/maps/api/js?sensor=false'    
+					},
+					'js/bootstrap.min.js',
+					'ielt9!js/respond.min.js',
+					'js/plugins.js?v=1.0',
+					'js/load.js?v=1.0'			
+				]);
+				init ();
+			}
+        }]);
+		
+		function init () {
+			$('body').addClass('hello world!')
+		};
     </script>
     
 </body>
