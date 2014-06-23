@@ -37,10 +37,8 @@
 	<link rel="stylesheet" href="css/print.css" media="print"> 
     <script src="js/modernizr.custom.55666.js"></script>
     </head>    
-    <body>
-    
+    <body>    
     <!--[if lt IE 8]><p class=chromeframe>Your browser is very outdated or in compatability mode. To use this site to its full potential please <a href="http://browsehappy.com/">upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a>.</p><![endif]-->
-    
 	<?php include_once('template_inc/google-analytics.php'); ?>
 
 	<div class="container">
@@ -62,31 +60,19 @@
 		   yep:'//code.jquery.com/jquery-2.1.0.min.js',
 		   nope: '//code.jquery.com/jquery-1.11.0.min.js',
 		   callback: function(url, result, key){
-				if (url === '//code.jquery.com/jquery-1.11.0.min.js') {
-					if ( !window.jQuery ) { Modernizr.load('js/jquery-1.11.0.min.js'); };
-				} else if (url === '//code.jquery.com/jquery-2.1.0.min.js') {
-					if ( !window.jQuery ) { Modernizr.load('js/jquery-2.1.0.min.js'); };
-				};				
+				<?php // LOAD THE CORRECT JQUERY VERSION // ?>
+				if (url === '//code.jquery.com/jquery-1.11.0.min.js') { if ( !window.jQuery ) { Modernizr.load('/js/jquery-1.11.0.min.js'); }; } else if (url === '//code.jquery.com/jquery-2.1.0.min.js') { if ( !window.jQuery ) { Modernizr.load('/js/jquery-2.1.0.min.js'); }; };				
 			},
 			complete: function() {
-				Modernizr.load([
-					{
-						test: $('.map').length > 0,
-						yep: '//maps.google.com/maps/api/js?sensor=false'    
-					},
-					'js/bootstrap.min.js',
-					'ielt9!js/respond.min.js',
-					'js/plugins.js?v=1.0',
-					'js/load.js?v=1.0'			
-				]);
-				init ();
+				<?php // LOAD OVER SCRIPTS // ?>
+				Modernizr.load([{ test: $('.map').length > 0, yep: '//maps.google.com/maps/api/js?sensor=false' },'/js/bootstrap.min.js','ielt9!/js/respond.min.js','/js/plugins.js?v=1.0','/js/load.js?v=1.0']);
+				<?php // RUN PAGE SCRIPT FUNCTION // ?>
+				pageinit ();
 			}
-        }]);
-		
-		function init () {
-			$('body').addClass('hello world!')
+        }]);		
+		function pageinit () {
+			<?php // O_o // ?>
 		};
-    </script>
-    
+    </script>    
 </body>
 </html>
