@@ -74,12 +74,20 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 	Tester: Rob Davies
 	Contact: r.davies [at] thinkap.com
 	From: Preston, Lancahsire, UK
+	
+	SEO Executive: Matt Lambourne
+	Contact: m.Lambourne [at] thinkap.com
+	From: Preston, Lancahsire, UK
 
 # THANKS
 	
-	All the A%P team.
+	Name: All the A%P team.
+	Site: www.thinkap.com
+	Twitter: @thinkap
+	Location: Preston, Lancahsire, UK
 
 # TECHNOLOGY COLOPHON
 	Language: English
-    Tech: HTML5, CSS3, Jquery
+	Components:Modernizr, jQuery, Respond
+    Standards: HTML5, CSS3
 	
