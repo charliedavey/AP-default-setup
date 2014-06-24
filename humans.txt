@@ -88,6 +88,6 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
 # TECHNOLOGY COLOPHON
 	Language: English
-	Components:Modernizr, jQuery, Respond
+	Components: Bootstrap, Modernizr, jQuery, Respond
     Standards: HTML5, CSS3
 	
