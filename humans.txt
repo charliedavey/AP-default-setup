@@ -3,12 +3,43 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+	Digital Manager: Charlie Davey
+	Contact: c.davey [at] thinkap.com
+	From: Preston, Lancahsire, UK
+
+	Front End Developer: Christian Mizon
+	Contact: c.mizon [at] thinkap.com
+	From: Preston, Lancahsire, UK
+	
+	Front End Developer: Michael Doyle
+	Contact: m.doyle [at] thinkap.com
+	From: Preston, Lancahsire, UK
+	
+	IT Director: Nick Parekh
+	Contact: n.parekh [at] thinkap.com
+	From: Preston, Lancahsire, UK
+	
+	Back End Developer: Steven Gracie
+	Contact: s.gracie [at] thinkap.com
+	From: Preston, Lancahsire, UK
+	
+	Back End Developer: Michael Kane
+	Contact: m.kane [at] thinkap.com
+	From: Preston, Lancahsire, UK
+	
+	Back End Developer: Cheryl Leack
+	Contact: c.leack [at] thinkap.com
+	From: Preston, Lancahsire, UK
+	
+	Tester: Rob Davies
+	Contact: r.davies [at] thinkap.com
+	From: Preston, Lancahsire, UK
 
 # THANKS
-
-    <name>
+	
+	All the A%P team.
 
 # TECHNOLOGY COLOPHON
-
-    HTML5, CSS3
+	Language: English
+    Tech: HTML5, CSS3, Jquery
+	
