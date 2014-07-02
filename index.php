@@ -26,6 +26,11 @@
 	</div>
 	<script>
 		<?php include_once( 'template_inc/footer.scripts.php'); ?>
+		
+		window.gMapsCallback = function() {
+			<?php // O_o IF REQUIRED // ?>			
+		};
+		
 		function pageinit() {
 			<?php // O_o // ?>
 		};
