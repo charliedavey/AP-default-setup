@@ -7,14 +7,14 @@
 <html class="no-js" lang="en">
 <!--<![endif]-->
 <head>  
-    <?php include_once( 'template_inc/head.meta.data.php'); ?>
-    <?php include_once( 'template_inc/head.mobile.and.icons.php'); ?>
-    <?php include_once( 'template_inc/head.og.data.php'); ?>
-    <?php include_once( 'template_inc/head.styles.php'); ?>
+<?php include_once( 'template_inc/head.meta.data.php'); ?>
+<?php include_once( 'template_inc/head.mobile.and.icons.php'); ?>
+<?php include_once( 'template_inc/head.og.data.php'); ?>
+<?php include_once( 'template_inc/head.styles.php'); ?>
 </head>
 <body>
-	<?php include_once( 'template_inc/browser.warning.php'); ?>
-	<?php include_once( 'template_inc/google-analytics.php'); ?>
+<?php include_once( 'template_inc/browser.warning.php'); ?>
+<?php include_once( 'template_inc/google-analytics.php'); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
