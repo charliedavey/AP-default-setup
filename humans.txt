@@ -47,6 +47,10 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 	Contact: c.davey [at] thinkap.com
 	From: Preston, Lancahsire, UK
 
+	Digital Manager: Gemma Sphet
+	Contact: g.sphet [at] thinkap.com
+	From: Preston, Lancahsire, UK
+
 	Front End Developer: Christian Mizon
 	Contact: c.mizon [at] thinkap.com
 	From: Preston, Lancahsire, UK
@@ -89,5 +93,5 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 # TECHNOLOGY COLOPHON
 	Language: English
 	Components: Bootstrap, Modernizr, jQuery, Respond
-    Standards: HTML5, CSS3
+	Standards: HTML5, CSS3
 	
